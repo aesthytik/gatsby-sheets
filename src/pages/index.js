@@ -62,38 +62,24 @@ export const query = graphql`
       edges {
         node {
           id
-      optimized_thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 400, maxHeight: 250) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      title
-      subTitle
-      description
-      cardLink
-      backgroundImageLink
-      tag1
-      tag2
-      tag3
-      tag4
-      filter
-      textColor
-      backgroundColor
-      cssClassNames
-      author
-      noOfPages
-      isbnCode
-      isbnLink
-      color
-      optimized_instructor_image {
-        childImageSharp {
-          fluid(maxHeight: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+          title
+          subTitle
+          description
+          cardLink
+          backgroundImageLink
+          tag1
+          tag2
+          tag3
+          tag4
+          filter
+          textColor
+          backgroundColor
+          cssClassNames
+          author
+          noOfPages
+          isbnCode
+          isbnLink
+          color
         }
       }
     }

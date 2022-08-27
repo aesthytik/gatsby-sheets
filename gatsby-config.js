@@ -23,22 +23,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-remote-images",
-      options: {
-        nodeType: "item",
-        imagePath: "thumbnail",
-        name: 'optimized_thumbnail',
-      }
-    },
-    {
-      resolve: "gatsby-plugin-remote-images",
-      options: {
-        nodeType: "item",
-        imagePath: "instructor_image", 
-        name: 'optimized_instructor_image',
-      }
-    },
-    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {

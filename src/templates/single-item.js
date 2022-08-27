@@ -115,13 +115,6 @@ export const ItemPageQuery = graphql`
   query ItemDetails($itemId: String!) {
     item(id: { eq: $itemId }) {
       id
-      optimized_thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 400, maxHeight: 250) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       title
       subTitle
       description
@@ -140,13 +133,6 @@ export const ItemPageQuery = graphql`
       isbnCode
       isbnLink
       color
-      optimized_instructor_image {
-        childImageSharp {
-          fluid(maxHeight: 50) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   }
 `
